@@ -1,0 +1,5 @@
+package com.cyberark.conjur.clientapp.util;
+
+public class ConjurPropertyLoaderUtil {
+
+}

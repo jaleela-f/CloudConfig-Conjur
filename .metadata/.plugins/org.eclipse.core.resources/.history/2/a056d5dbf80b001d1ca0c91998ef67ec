@@ -1,0 +1,7 @@
+package com.cyberark.conjur;
+
+
+@SpringBootApplication
+public class ClientApplication {
+
+}

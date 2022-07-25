@@ -1,0 +1,5 @@
+package com.cyberark.conjur.configclient;
+
+public class ClientApp {
+
+}
