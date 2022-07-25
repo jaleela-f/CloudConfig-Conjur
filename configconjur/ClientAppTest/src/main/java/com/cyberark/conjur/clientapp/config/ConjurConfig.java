@@ -1,5 +1,7 @@
 package com.cyberark.conjur.clientapp.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -10,6 +12,8 @@ import com.cyberark.conjur.clientapp.core.ConjurPropertySource;
 
 @Configuration
 public class ConjurConfig {
+	
+	private Logger logger = LoggerFactory.getLogger(ConjurConfig.class);
 
 	@Bean
 	@Primary

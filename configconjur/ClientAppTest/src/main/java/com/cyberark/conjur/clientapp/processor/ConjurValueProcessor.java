@@ -12,9 +12,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
@@ -35,7 +32,7 @@ import com.cyberark.conjur.clientapp.util.ConjurPropertyLoaderUtil;
 public class ConjurValueProcessor
 		implements BeanPostProcessor, InitializingBean, ApplicationContextAware, EnvironmentAware {
 	
-	Logger logger = LoggerFactory.getLogger(this.getClass());
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
 	private ConjurPropertySource propertySource;
@@ -105,16 +102,16 @@ public class ConjurValueProcessor
 				}
 
 			} else {
-				System.out.println("Property Source2>>>" + beanName);
+				logger.info("Property Source2>>>" + beanName);
 				//System.out.println("Property Source>>>" + systemConfigMap);
 				secretParams = (Map<String, Object>) propertySource.getPropertyMethod();
-				System.out.println("SEcret value"+secretParams);
+				logger.info("SEcret value"+secretParams);
 				for (Map.Entry<String, Object> map : secretParams.entrySet()) {
 					String key = map.getKey();
-					System.out.println("Key>>>" + key);
+					logger.info("Key>>>" + key);
 
 					Object secretValue = map.getValue();
-					System.out.println("VAlue >>>>" + secretValue);
+					logger.info("VAlue >>>>" + secretValue);
 					systemConfigMap.put(key, secretValue);
 				}
 				logger.debug("Secrets >>>" + systemConfigMap);
@@ -129,7 +126,7 @@ public class ConjurValueProcessor
 	public void setEnvironment(Environment environment) {
 		// TODO Auto-generated method stub
 		if (environment instanceof ConfigurableEnvironment) {
-			logger.debug("Environment>>" + environment);
+			logger.info("Environment>>" + environment);
 			this.environment = (ConfigurableEnvironment) environment;
 		}
 
