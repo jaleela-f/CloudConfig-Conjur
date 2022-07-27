@@ -1573,3 +1573,27 @@ org.eclipse.core.runtime.CoreException: Launch configuration ClientApplication r
 2022-07-27 17:06:16,153 [Worker-10: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
 2022-07-27 17:06:16,185 [Worker-10: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
 2022-07-27 17:06:16,211 [Worker-10: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:04:42,946 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-07-27 19:05:13,218 [Worker-12: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier  to /config-client-library/target/classes
+2022-07-27 19:05:13,921 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:13,925 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-27 19:05:13,937 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-27 19:05:13,939 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:13,939 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-27 19:05:35,413 [Worker-10: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Applications/SpringCloudConfig-Conjur/configconjur
+2022-07-27 19:05:35,413 [Worker-10: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-07-27 19:05:40,569 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:40,570 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-27 19:05:40,571 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:40,572 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-27 19:05:40,690 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:40,691 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-27 19:05:40,693 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-07-27 19:05:40,695 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-07-27 19:05:40,695 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-07-27 19:05:45,934 [Worker-17: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:05:45,984 [Worker-17: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:05:46,023 [Worker-17: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:06:08,515 [Worker-30: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:06:08,551 [Worker-30: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-07-27 19:06:08,582 [Worker-30: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes

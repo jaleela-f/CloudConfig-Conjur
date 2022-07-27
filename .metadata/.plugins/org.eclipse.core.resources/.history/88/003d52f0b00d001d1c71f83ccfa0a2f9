@@ -60,7 +60,7 @@ private Properties conjurProps = new Properties();
 		return propertyList;
 	}
 
-	/*public static void loadEnvironmentParameters(Map<String, String> newenv)
+	public static void loadEnvironmentParameters(Map<String, String> newenv)
 			throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		// System.out.println("calling inside vault" + newenv);
 
@@ -76,7 +76,7 @@ private Properties conjurProps = new Properties();
 
 			}
 		}
-	}*/
+	}
 
 	public void loadSystemEnvironmentParameter(Map<String, String> params) {
 		FileInputStream reader = null;
