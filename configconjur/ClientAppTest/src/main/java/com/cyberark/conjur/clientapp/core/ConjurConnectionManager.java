@@ -24,19 +24,20 @@ public class ConjurConnectionManager {
 	private static Conjur getConnection(ConjurAuthParam conjurParam) {
 
 		logger.info("Inside Connection Manager get Connection");
-		// Credentials credentials = new Credentials(conjurParam.getConjurAccount(),
-		// conjurParam.getConjurApiKey().trim(),
-		// conjurParam.getConjurApplianceUrl());
+		//Credentials credentials = new Credentials(conjurParam.getConjurAccount(),
+		 //conjurParam.getConjurApiKey().trim(),
+		 //conjurParam.getConjurApplianceUrl());
+		//conjur = new Conjur(credentials);
 
 		try {
-			logger.info("Account >>>" + conjurParam.getConjurAccount());
+			///logger.info("Account >>>" + conjurParam.getConjurAccount());
 			System.setProperty("CONJUR_ACCOUNT", conjurParam.getConjurAccount());
 			System.setProperty("CONJUR_APPLIANCE_URL", conjurParam.getConjurApplianceUrl());
 			System.setProperty("CONJUR_AUTHN_LOGIN", conjurParam.getConjurAuthLogin());
 			System.setProperty("CONJUR_AUTHN_API_KEY", conjurParam.getConjurApiKey().trim());
 
 			conjur = new Conjur();
-
+			
 			logger.info("Connection with Conjur is successful" + conjur);
 
 		} catch (Exception e) {
