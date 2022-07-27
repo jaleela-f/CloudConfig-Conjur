@@ -25,13 +25,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.config.client.library"/>
 		</list>
 		<list key="groupId">
-			<item value="com.cyberark.conjur.cloudconfigconjur"/>
 		</list>
 		<list key="artifactId">
-			<item value="config-client-library"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -47,13 +44,16 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cyberark.conjur.cloudconfig"/>
 			<item value="com.cyberark.conjur.cloudconfigconjur"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="config-client-library"/>
+			<item value="configserver"/>
+			<item value="ClientAppTest"/>
 			<item value="configconjur"/>
+			<item value="config-client-library"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,6 +73,7 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="ClientAppTest"/>
 			<item value="config-client-library"/>
 		</list>
 		<list key="projectNameTemplate">

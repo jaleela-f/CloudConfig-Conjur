@@ -25,8 +25,8 @@ public class ClientApplication {
 	@Value("${jenkins-app.dbUrl}")
 	private String url;
 
-	@Autowired
-	private ConjurAuthParam authParam;
+	//@Autowired
+	//private ConjurAuthParam authParam;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClientApplication.class, args);
@@ -36,19 +36,19 @@ public class ClientApplication {
 	@RequestMapping("/getAuthParam")
 	public String getAuthParams() {
 		logger.info("Rocking the Libray usage :) !");
-		String conurAccount = authParam.getConjurAccount();
-		String conjurApiKey = authParam.getConjurApiKey();
-		String conjurUrl = authParam.getConjurApplianceUrl();
-		String conjurLogin = authParam.getConjurAuthLogin();
+		//String conurAccount = authParam.getConjurAccount();
+		//String conjurApiKey = authParam.getConjurApiKey();
+		//String conjurUrl = authParam.getConjurApplianceUrl();
+		//String conjurLogin = authParam.getConjurAuthLogin();
 
 		logger.info("Property >>>>>>>" + userName);
 		logger.info("Property >>>>>>>" + password);
 		logger.info("Property >>>>>>>>" + url);
 
-		logger.info("Conjur Account>>>" + conurAccount);
-		logger.info("Conjur Url>>>>>" + conjurApiKey);
-		logger.info("Conjur Login>>>>>" + conjurUrl);
-		logger.info("Conjur API Key >>>>>." + conjurLogin);
+	//	logger.info("Conjur Account>>>" + conurAccount);
+//		logger.info("Conjur Url>>>>>" + conjurApiKey);
+//		logger.info("Conjur Login>>>>>" + conjurUrl);
+//		logger.info("Conjur API Key >>>>>." + conjurLogin);
 
 		return String
 				.valueOf("REtrieved Secrets :" + "DBUSERNAME =" + userName + "Password =" + password + "Url =" + url);
