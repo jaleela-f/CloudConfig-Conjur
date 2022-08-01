@@ -21,13 +21,14 @@ public class ConjurConfig {
 		return new ConjurPropertySource();
 	}
 
-	@Bean
-	public PropertySourcesPlaceholderConfigurer getPropertyplaceHolderconfigureer() {
-
-		PropertySourcesPlaceholderConfigurer cfg = new PropertySourcesPlaceholderConfigurer();
-		cfg.setLocation(new ClassPathResource("conjur.properties"));
-		return cfg;
-	}
+	/*
+	 * @Bean public PropertySourcesPlaceholderConfigurer
+	 * getPropertyplaceHolderconfigureer() {
+	 * 
+	 * PropertySourcesPlaceholderConfigurer cfg = new
+	 * PropertySourcesPlaceholderConfigurer(); cfg.setLocation(new
+	 * ClassPathResource("conjur.properties")); return cfg; }
+	 */
 	
 
 }

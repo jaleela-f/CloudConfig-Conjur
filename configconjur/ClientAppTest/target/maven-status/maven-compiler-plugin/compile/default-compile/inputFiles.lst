@@ -1,6 +1,9 @@
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/core/ConjurConnectionManager.java
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/ClientApplication.java
+/Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/service/PropertyProcessorChain.java
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/core/ConjurPropertySource.java
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/processor/ConjurValueProcessor.java
+/Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/service/DefaultPropertySourceChain.java
+/Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/service/CustomPropertySourceChain.java
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/util/ConjurPropertyLoaderUtil.java
 /Applications/SpringCloudConfig-Conjur/configconjur/ClientAppTest/src/main/java/com/cyberark/conjur/clientapp/config/ConjurConfig.java
