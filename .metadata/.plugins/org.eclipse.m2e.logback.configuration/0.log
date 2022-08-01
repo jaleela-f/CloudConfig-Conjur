@@ -1987,3 +1987,134 @@ org.eclipse.core.runtime.CoreException: Launch configuration ClientApplication r
 2022-08-01 16:23:45,999 [Worker-62: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
 2022-08-01 16:23:46,029 [Worker-62: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
 2022-08-01 16:23:46,057 [Worker-62: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:35:56,825 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:35:56,825 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:35:56,826 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:35:56,826 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:07,308 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:07,309 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:07,309 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:07,309 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:24,217 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:24,217 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:24,218 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:24,218 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:34,131 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:34,132 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:47:34,132 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:47:34,133 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:48:02,374 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:48:02,375 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:48:02,375 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:48:02,375 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:48:56,339 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:48:56,340 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:48:56,341 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:48:56,341 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:21,502 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:21,502 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:21,503 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:21,503 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:42,474 [Worker-76: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Applications/SpringCloudConfig-Conjur/configconjur
+2022-08-01 17:49:42,474 [Worker-76: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-08-01 17:49:48,928 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:48,928 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:48,929 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:48,929 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:48,978 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:48,978 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 17:49:48,979 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:49:48,980 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:49:48,981 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:52:27,081 [Worker-81: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:52:27,108 [Worker-81: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:52:27,134 [Worker-81: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:54:10,758 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:54:10,758 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:54:10,759 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:54:10,759 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:54:36,143 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:54:36,144 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:54:36,144 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:54:36,144 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:55:00,656 [Worker-81: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Applications/SpringCloudConfig-Conjur/configconjur
+2022-08-01 17:55:00,657 [Worker-81: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-08-01 17:55:03,691 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:55:03,691 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:55:03,692 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:55:03,692 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:55:03,694 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:55:03,695 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 17:55:03,696 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:55:03,696 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:55:03,697 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:55:09,880 [Worker-83: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:55:09,910 [Worker-83: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:55:09,938 [Worker-83: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 17:56:54,372 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:56:54,372 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:56:54,373 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:56:54,373 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:57:15,559 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:57:15,559 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:57:15,560 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:57:15,560 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:57:40,780 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:57:40,781 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:57:40,781 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:57:40,781 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:59:39,075 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:59:39,075 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 17:59:39,077 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:59:39,078 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:59:39,078 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:59:56,540 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:59:56,541 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 17:59:56,543 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 17:59:56,545 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 17:59:56,545 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:10,086 [Worker-78: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Applications/SpringCloudConfig-Conjur/configconjur
+2022-08-01 18:00:10,086 [Worker-78: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-08-01 18:00:13,118 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:13,118 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:13,119 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:13,119 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:13,121 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:13,122 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 18:00:13,123 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:13,124 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:13,124 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:20,784 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:20,785 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:20,785 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:20,785 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:20,858 [Worker-75: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:00:20,886 [Worker-75: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:00:20,915 [Worker-75: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:00:49,876 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:49,877 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 18:00:49,879 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:00:49,880 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:00:49,880 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:01:00,661 [Worker-80: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Applications/SpringCloudConfig-Conjur/configconjur
+2022-08-01 18:01:00,661 [Worker-80: Launching Executing install in _Applications_SpringCloudConfig-Conjur_configconjur] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-08-01 18:01:03,606 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:01:03,606 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:01:03,606 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:01:03,606 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:01:03,609 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:01:03,609 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 18:01:03,610 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:01:03,611 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:01:03,611 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:01:10,026 [Worker-80: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:01:10,061 [Worker-80: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:01:10,090 [Worker-80: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:02:28,707 [Worker-84: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:02:28,734 [Worker-84: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:02:28,760 [Worker-84: Launching ClientApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/config-client-library: com.cyberark.conjur.cloudconfigconjur:config-client-library:0.0.1-SNAPSHOT with classifier null to /config-client-library/target/classes
+2022-08-01 18:03:46,212 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:03:46,213 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-08-01 18:03:46,214 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-08-01 18:03:46,215 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 18:03:46,215 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

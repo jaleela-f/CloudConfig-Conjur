@@ -1,5 +1,8 @@
 package com.cyberark.conjur.configclient.domain;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +17,8 @@ public class ConjurAuthParam {
 	private static String conjurAuthLogin;
 
 	private static String conjurApiKey;
+
+	private static String conjurTokenFile;
 
 	public String getConjurAccount() {
 		return conjurAccount;
@@ -50,6 +55,17 @@ public class ConjurAuthParam {
 	@Autowired
 	public void setConjurApiKey(@Value("${CONJUR.API_KEY}") String conjurApiKey) {
 		this.conjurApiKey = conjurApiKey;
+	}
+
+	public String getConjurTokenFile() {
+		return conjurTokenFile;
+	}
+
+	@Autowired
+	public void setConjurTokenFile(@Value("${CONJUR.AUTHN_TOKEN_FILE}") String conjurTokenFile) {
+
+		this.conjurTokenFile = conjurTokenFile;
+
 	}
 
 }
