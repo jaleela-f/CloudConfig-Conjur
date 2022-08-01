@@ -24,7 +24,7 @@ public class ConjurPropertySource implements EnvironmentAware {
 	private static ConjurPropertyLoaderUtil propertyLoader = new ConjurPropertyLoaderUtil();
 
 	@Autowired
-	private ConjurAuthParam conjurParam;// = new ConjurAuthParam();
+	private ConjurAuthParam conjurParam = new ConjurAuthParam();
 
 	@Autowired
 	Environment env;
@@ -42,7 +42,7 @@ public class ConjurPropertySource implements EnvironmentAware {
 
 	}
 
-	public Object getPropertyMethod() {
+	/*public Object getPropertyMethod() {
 
 		Map<String, Object> myMap = new HashMap<String, Object>();
 
@@ -77,6 +77,29 @@ public class ConjurPropertySource implements EnvironmentAware {
 			e.getMessage();
 		}
 		return myMap;
+
+	}*/
+	
+	public Object getPropertyMethod(String key) {
+
+		Map<String, Object> myMap = new HashMap<String, Object>();
+
+		if (null == conjur) {
+
+			conjur = ConjurConnectionManager.getInstance(conjurParam);
+		}
+		String result = null;
+		try {
+
+			result = conjur.variables().retrieveSecret(key.replace(".", "/"));
+			logger.info("Value inside PropertySource>>>" + result);
+
+			//myMap.put(key, result);
+
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		return result;
 
 	}
 
