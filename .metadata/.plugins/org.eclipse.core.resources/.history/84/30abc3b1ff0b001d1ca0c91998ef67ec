@@ -1,5 +1,0 @@
-package com.cyberark.conjur.clientapp.core;
-
-public class ConjurPropertySource {
-
-}

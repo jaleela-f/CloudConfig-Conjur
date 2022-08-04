@@ -19,8 +19,6 @@
     <fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.text.DateFormat.Field"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
@@ -32,13 +30,22 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="com.cyberark.conjur.api.Conjur"/>
-    <fullyQualifiedTypeName name="com.cyberark.conjur.configclient.domain.ConjurAuthParam"/>
     <fullyQualifiedTypeName name="com.cyberark.conjur.clientapp.core.ConjurPropertySource"/>
     <fullyQualifiedTypeName name="com.cyberark.conjur.clientapp.util.ConjurPropertyLoaderUtil"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.cyberark.conjur.api.Credentials"/>
-    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.core.env.EnumerablePropertySource"/>
+    <fullyQualifiedTypeName name="com.cyberark.conjur.clientapp.service.PropertyProcessorChain"/>
+    <fullyQualifiedTypeName name="com.cyberark.conjur.clientapp.service.DefaultPropertySourceChain"/>
+    <fullyQualifiedTypeName name="com.cyberark.conjur.clientapp.service.CustomPropertySourceChain"/>
+    <fullyQualifiedTypeName name="com.cyberark.conjur.configclient.domain.ConjurAuthParam"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="com.cyberark.conjur.springboot.annotations.ConjurPropertySource"/>
 </qualifiedTypeNameHistroy>

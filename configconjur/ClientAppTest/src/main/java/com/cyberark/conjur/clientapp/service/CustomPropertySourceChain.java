@@ -29,9 +29,6 @@ public class CustomPropertySourceChain implements PropertyProcessorChain {
 	private ConjurPropertySource propertySource = new ConjurPropertySource();
 
 
-	private final String propertySourceName = "classpath:/conjur.properties";
-
-
 	@Override
 	public void setNextChain(PropertyProcessorChain nextChain) {
 		// TODO Auto-generated method stub

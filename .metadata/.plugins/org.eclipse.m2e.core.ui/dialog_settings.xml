@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Applications/SpringCloudConfig-Conjur/configconjur/pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,12 +45,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cyberark.conjur.configconjur"/>
 			<item value="com.cyberark.conjur.cloudconfig"/>
 			<item value="com.cyberark.conjur.cloudconfigconjur"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Demo"/>
 			<item value="configserver"/>
 			<item value="ClientAppTest"/>
 			<item value="configconjur"/>

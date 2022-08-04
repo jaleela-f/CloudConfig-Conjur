@@ -19,6 +19,11 @@ public class ConjurAuthParam {
 	private static String conjurApiKey;
 
 	private static String conjurTokenFile;
+	
+	public ConjurAuthParam()
+	{
+		System.out.println("Inside ConjurAuthParam");
+	}
 
 	public String getConjurAccount() {
 		return conjurAccount;

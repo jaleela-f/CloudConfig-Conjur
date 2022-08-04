@@ -28,25 +28,25 @@ public class ConjurConnectionManager {
 
 		logger.info("Inside Connection Manager get Connection with AuthParam");
 		String apiKey;
-		//Credentials credentials = new Credentials(conjurParam.getConjurAccount(),
-		 //conjurParam.getConjurApiKey().trim(),
-		 //conjurParam.getConjurApplianceUrl());
-		//conjur = new Conjur(credentials);
+		// Credentials credentials = new Credentials(conjurParam.getConjurAccount(),
+		// conjurParam.getConjurApiKey().trim(),
+		// conjurParam.getConjurApplianceUrl());
+		// conjur = new Conjur(credentials);
 
 		try {
-			logger.info("Account >>>" + conjurParam.getConjurAccount());
+			// logger.info("Account >>>" + conjurParam.getConjurAccount());
 			System.setProperty("CONJUR_ACCOUNT", conjurParam.getConjurAccount());
 			System.setProperty("CONJUR_APPLIANCE_URL", conjurParam.getConjurApplianceUrl());
 			System.setProperty("CONJUR_AUTHN_LOGIN", conjurParam.getConjurAuthLogin());
-			//System.setProperty("CONJUR_AUTHN_API_KEY", conjurParam.getConjurApiKey().trim());
-			
-			apiKey= conjurParam.getConjurApiKey().trim();
-			if(apiKey==null || apiKey.isBlank())
-			{
+			// System.setProperty("CONJUR_AUTHN_API_KEY",
+			// conjurParam.getConjurApiKey().trim());
+
+			apiKey = conjurParam.getConjurApiKey().trim();
+			if (apiKey == null || apiKey.isBlank()) {
 				logger.info(" retrieving api key from token file");
 				String tokenFile = conjurParam.getConjurTokenFile();
-				
-				try (BufferedReader br = new BufferedReader(new FileReader(tokenFile))){
+
+				try (BufferedReader br = new BufferedReader(new FileReader(tokenFile))) {
 					StringBuilder sb = new StringBuilder();
 					String line = br.readLine();
 
@@ -55,19 +55,17 @@ public class ConjurConnectionManager {
 						sb.append(System.lineSeparator());
 						line = br.readLine();
 					}
-					apiKey =  sb.toString();
+					apiKey = sb.toString();
 				} catch (Exception e1) {
 					e1.printStackTrace();
 
 				}
-				
+
 			}
 			System.setProperty("CONJUR_AUTHN_API_KEY", apiKey.trim());
-			//System.out.println("Token KEy"+apiKey);
-
 			conjur = new Conjur();
-			
-			logger.info("Connection with Conjur is successful" + conjur);
+
+			logger.info("Connection with Conjur is successful");
 
 		} catch (Exception e) {
 
@@ -84,11 +82,11 @@ public class ConjurConnectionManager {
 
 			conjur = new Conjur();
 
-			logger.info("Connection with Conjur is successful" + conjur);
+			logger.info("Connection with Conjur is successful");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return conjur;
 	}
@@ -112,7 +110,7 @@ public class ConjurConnectionManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		logger.info("Conjur connection object" + conjur);
+		//logger.info("Conjur connection object" + conjur);
 		return conjur;
 	}
 
@@ -129,7 +127,7 @@ public class ConjurConnectionManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		logger.info("Conjur connection object" + conjur);
+		//logger.info("Conjur connection object" + conjur);
 		return conjur;
 	}
 
