@@ -136,6 +136,7 @@ public class ConjurValueProcessor
 		// TODO Auto-generated method stub
 		MutablePropertySources source = environment.getPropertySources();
 		List<String> keys = new ArrayList<String>();
+		System.out.println(source);
 		for (PropertySource<?> ps : source) {
 
 			if (ps instanceof EnumerablePropertySource) {
