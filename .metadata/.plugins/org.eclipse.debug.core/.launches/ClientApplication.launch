@@ -6,11 +6,6 @@
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
-    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
-        <mapEntry key="jenkins-app.dbPassword" value=""/>
-        <mapEntry key="jenkins-app.dbUrl" value=""/>
-        <mapEntry key="jenkins-app.dbUserName" value=""/>
-    </mapAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>

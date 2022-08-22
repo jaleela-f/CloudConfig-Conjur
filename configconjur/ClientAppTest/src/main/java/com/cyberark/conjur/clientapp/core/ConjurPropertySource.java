@@ -1,65 +1,67 @@
 package com.cyberark.conjur.clientapp.core;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.EnvironmentAware;
-import org.springframework.core.env.Environment;
+import org.springframework.core.env.EnumerablePropertySource;
+import org.springframework.stereotype.Component;
 
 import com.cyberark.conjur.api.Conjur;
-import com.cyberark.conjur.clientapp.util.ConjurPropertyLoaderUtil;
+import com.cyberark.conjur.api.Variables;
+import com.cyberark.conjur.clientapp.env.ConjurMapProperty;
 import com.cyberark.conjur.configclient.domain.ConjurAuthParam;
 
-public class ConjurPropertySource implements EnvironmentAware {
+@Component
+public class ConjurPropertySource extends EnumerablePropertySource<Object> {
 
 	private Logger logger = LoggerFactory.getLogger(ConjurPropertySource.class);
 
-	private Conjur conjur;
+	@Autowired(required = false)
+	private ConjurAuthParam conjurParam;// = new ConjurAuthParam();
 
-	private static ConjurPropertyLoaderUtil propertyLoader = new ConjurPropertyLoaderUtil();
-
-	@Autowired
-	private ConjurAuthParam conjurParam = new ConjurAuthParam();
-
-	@Autowired
-	Environment env;
-
-	@Override
-	public void setEnvironment(Environment environment) {
-		this.env = environment;
-	}
-
-	public Environment getEnvironment() {
-		return env;
-	}
+	private Conjur conjur = null;
+	Variables var;
 
 	public ConjurPropertySource() {
+		super("conjurPropertySource");
 
 	}
 
-	public Object getPropertyMethod(String key) {
+	@Override
+	public String[] getPropertyNames() { // TODO Auto-generated method stub
+		return new String[0];
+	}
 
-		Map<String, Object> myMap = new HashMap<String, Object>();
-
-		if (null == conjur) {
-
-			conjur = ConjurConnectionManager.getInstance(conjurParam);
-		}
-		String result = null;
+	@Override
+	public Object getProperty(String key) { // TODO Auto-generated method stub
+		String value = null;
 		try {
 
-			result = conjur.variables().retrieveSecret(key.replace(".", "/"));
-			//logger.info("Value inside PropertySource>>>" + result);
-		} catch (Exception e) {
-			e.getMessage();
-		}
-		return result;
+			// if (key.contains("jenkins-app.dbUserName") ||
+			// key.contains("jenkins-app.dbPassword")
+			// || key.contains("jenkins-app.dbUrl")) {
 
+			// if (null == conjur) {
+
+			conjur = ConjurConnectionManager.getInstance(conjurParam);
+			if (null != conjur) {
+				var = conjur.variables();
+				//logger.info("Key >>" + key);
+				key = ConjurMapProperty.getInstance().mapProperty(key);
+				logger.info("Key >>" + key);
+
+				value = var.retrieveSecret(key.replace(".", "/"));
+			}
+
+			// }
+			// }
+
+		} catch (Exception e) {
+			//logger.error("Error connecting to Conjur Vault" + e.getStackTrace());
+
+		}
+		//logger.info("Value>>>>" + value);
+		return value;
 	}
 
 }
