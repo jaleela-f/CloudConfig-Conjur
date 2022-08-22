@@ -1,24 +1,22 @@
 package com.cyberark.conjur.configclient.domain;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+
 public class ConjurAuthParam {
 
-	private static String conjurAccount;
+	private  String conjurAccount;
 
-	private static String conjurApplianceUrl;
+	private  String conjurApplianceUrl;
 
-	private static String conjurAuthLogin;
+	private  String conjurAuthLogin;
 
-	private static String conjurApiKey;
+	private  String conjurApiKey;
 
-	private static String conjurTokenFile;
+	private  String conjurTokenFile;
 	
 	public ConjurAuthParam()
 	{
@@ -29,8 +27,8 @@ public class ConjurAuthParam {
 		return conjurAccount;
 	}
 
-	@Autowired
-	public void setConjurAccount(@Value("${CONJUR.ACCOUNT}") String conjurAccount) {
+	
+	public void setConjurAccount( String conjurAccount) {
 		this.conjurAccount = conjurAccount;
 	}
 
@@ -38,8 +36,8 @@ public class ConjurAuthParam {
 		return conjurApplianceUrl;
 	}
 
-	@Autowired
-	public void setConjurApplianceUrl(@Value("${CONJUR.APPLIANCE_URL}") String conjurApplianceUrl) {
+	
+	public void setConjurApplianceUrl( String conjurApplianceUrl) {
 		this.conjurApplianceUrl = conjurApplianceUrl;
 
 	}
@@ -48,8 +46,8 @@ public class ConjurAuthParam {
 		return conjurAuthLogin;
 	}
 
-	@Autowired
-	public void setConjurAuthLogin(@Value("${CONJUR.AUTHN_LOGIN}") String conjurAuthLogin) {
+	
+	public void setConjurAuthLogin( String conjurAuthLogin) {
 		this.conjurAuthLogin = conjurAuthLogin;
 	}
 
@@ -57,8 +55,8 @@ public class ConjurAuthParam {
 		return conjurApiKey;
 	}
 
-	@Autowired
-	public void setConjurApiKey(@Value("${CONJUR.API_KEY}") String conjurApiKey) {
+	
+	public void setConjurApiKey( String conjurApiKey) {
 		this.conjurApiKey = conjurApiKey;
 	}
 
@@ -66,11 +64,18 @@ public class ConjurAuthParam {
 		return conjurTokenFile;
 	}
 
-	@Autowired
-	public void setConjurTokenFile(@Value("${CONJUR.AUTHN_TOKEN_FILE}") String conjurTokenFile) {
+	
+	public void setConjurTokenFile( String conjurTokenFile) {
 
 		this.conjurTokenFile = conjurTokenFile;
 
 	}
 
+	
+	public String toString()
+	{
+		return "Property [ Account ="+conjurAccount +"Url =" +conjurApplianceUrl +"]";
+	}
+
 }
+

@@ -7,15 +7,11 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.EnvironmentAware;
-import org.springframework.core.env.ConfigurableEnvironment;
-import org.springframework.core.env.Environment;
-import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.env.PropertySource;
 
+
 public class DefaultPropertySourceChain implements PropertyProcessorChain {
-	
+
 	private Logger logger = LoggerFactory.getLogger(DefaultPropertySourceChain.class);
 
 	private PropertyProcessorChain chain;
@@ -42,6 +38,7 @@ public class DefaultPropertySourceChain implements PropertyProcessorChain {
 
 		}
 		for (Map.Entry<String, Object> secret : newMap.entrySet()) {
+			
 			value = secret.getValue().toString();
 
 			if (value != null && !value.isBlank()) {
@@ -49,7 +46,7 @@ public class DefaultPropertySourceChain implements PropertyProcessorChain {
 			}
 
 		}
-		//System.out.println("Value List in default PropertySource" + valueList.size());
+		System.out.println("Value List in default PropertySource" + valueList.size());
 		if (!(valueList.size() > 0)) {
 			newMap =this.chain.getProperty(propertyKey, ps);
 
@@ -57,7 +54,5 @@ public class DefaultPropertySourceChain implements PropertyProcessorChain {
 		return newMap;
 
 	}
-
-	
 
 }

@@ -1,5 +1,6 @@
 com/cyberark/conjur/ClientApplication.class
 com/cyberark/conjur/clientapp/service/CustomPropertySourceChain.class
+com/cyberark/conjur/clientapp/processor/ValueProcess.class
 com/cyberark/conjur/clientapp/config/ConjurConfig.class
 com/cyberark/conjur/clientapp/core/ConjurConnectionManager.class
 com/cyberark/conjur/clientapp/service/DefaultPropertySourceChain.class
