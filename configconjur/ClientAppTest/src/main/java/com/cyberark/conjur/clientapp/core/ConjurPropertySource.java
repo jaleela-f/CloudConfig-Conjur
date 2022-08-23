@@ -15,6 +15,7 @@ import com.cyberark.conjur.configclient.domain.ConjurAuthParam;
 public class ConjurPropertySource extends EnumerablePropertySource<Object> {
 
 	private Logger logger = LoggerFactory.getLogger(ConjurPropertySource.class);
+	
 
 	@Autowired(required = false)
 	private ConjurAuthParam conjurParam;// = new ConjurAuthParam();
@@ -37,27 +38,25 @@ public class ConjurPropertySource extends EnumerablePropertySource<Object> {
 		String value = null;
 		try {
 
-			// if (key.contains("jenkins-app.dbUserName") ||
-			// key.contains("jenkins-app.dbPassword")
-			// || key.contains("jenkins-app.dbUrl")) {
-
-			// if (null == conjur) {
-
+			
 			conjur = ConjurConnectionManager.getInstance(conjurParam);
 			if (null != conjur) {
+				
 				var = conjur.variables();
 				//logger.info("Key >>" + key);
 				key = ConjurMapProperty.getInstance().mapProperty(key);
-				logger.info("Key >>" + key);
+			
+				//logger.info("Key >>" + key);
 
 				value = var.retrieveSecret(key.replace(".", "/"));
+				//System.out.println("Value from Vault >>>>"+value);
+				
+				
 			}
 
-			// }
-			// }
-
+	
 		} catch (Exception e) {
-			//logger.error("Error connecting to Conjur Vault" + e.getStackTrace());
+			//logger.error("Error connecting to Conjur Vault" + e.getMessage());
 
 		}
 		//logger.info("Value>>>>" + value);

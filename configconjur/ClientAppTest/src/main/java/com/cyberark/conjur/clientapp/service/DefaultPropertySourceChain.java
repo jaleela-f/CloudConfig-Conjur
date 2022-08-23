@@ -2,15 +2,16 @@ package com.cyberark.conjur.clientapp.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.env.EnumerablePropertySource;
 import org.springframework.core.env.PropertySource;
 
-
-public class DefaultPropertySourceChain implements PropertyProcessorChain {
+public class DefaultPropertySourceChain extends PropertyProcessorChain {
 
 	private Logger logger = LoggerFactory.getLogger(DefaultPropertySourceChain.class);
 
@@ -18,6 +19,13 @@ public class DefaultPropertySourceChain implements PropertyProcessorChain {
 
 	private Map<String, Object> newMap = new HashMap<String, Object>();
 	private List<String> valueList = new ArrayList<String>();
+
+	public DefaultPropertySourceChain() {
+
+		super("defaultPropertySource");
+		System.out.println("Calling DefaultPropertysource Chain");
+
+	}
 
 	@Override
 	public void setNextChain(PropertyProcessorChain nextChain) {
@@ -27,32 +35,25 @@ public class DefaultPropertySourceChain implements PropertyProcessorChain {
 	}
 
 	@Override
-	public Map<String, Object> getProperty(List<String> propertyKey, PropertySource ps) {
-		logger.info("Insde Get Property for DefaultPropertySourceChain");
-		String value;
+	public String[] getPropertyNames() {
+		// TODO Auto-generated method stub
+		return new String[0];
+	}
 
-		for (String key : propertyKey) {
-			// value = (String) ps.getProperty(key);
-			newMap.put(key, ps.getProperty(key));
-			//System.out.println("New MAp value" + newMap);
+	@Override
+	public Object getProperty(String name) {
+		// TODO Auto-generated method stub
 
-		}
-		for (Map.Entry<String, Object> secret : newMap.entrySet()) {
-			
-			value = secret.getValue().toString();
+		String value = null;
+		System.out.println("Value inside Default" + value);
 
-			if (value != null && !value.isBlank()) {
-				valueList.add(value);
+		
+			if (value == null) {
+				value = (String) this.chain.getProperty(name);
 			}
+		
 
-		}
-		System.out.println("Value List in default PropertySource" + valueList.size());
-		if (!(valueList.size() > 0)) {
-			newMap =this.chain.getProperty(propertyKey, ps);
-
-		} 
-		return newMap;
-
+		return value;
 	}
 
 }

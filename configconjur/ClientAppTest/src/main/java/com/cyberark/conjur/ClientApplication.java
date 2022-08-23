@@ -11,19 +11,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@SpringBootApplication
-@RestController
-public class ClientApplication implements CommandLineRunner{
+//@SpringBootApplication
+//@RestController
+//public class ClientApplication{// implements CommandLineRunner{
 
-	private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
+	/*private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
 
-	@Value("${dbUserName")
+	@Value("${jenkins-app.dbUserName}")
 	private String userName;
 
-	@Value("${dbPassword}")
+	@Value("${jenkins-app.dbPassword}")
 	private String password;
 
-	@Value("${dbUrl}")
+	@Value("${jenkins-app.dbUrl}")
 	private String url;
 
 	
@@ -51,7 +51,7 @@ public class ClientApplication implements CommandLineRunner{
 		logger.info("Property >>>>>>>" + password);
 		logger.info("Property >>>>>>>>" + url);
 		
-	}
+	}*/
 	
 
-}
+//}

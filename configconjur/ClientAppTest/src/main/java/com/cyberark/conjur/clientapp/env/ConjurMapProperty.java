@@ -1,9 +1,15 @@
 package com.cyberark.conjur.clientapp.env;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ResourceUtils;
+
+import com.cyberark.conjur.configclient.domain.ConjurMapKey;
 
 /**
  * 
@@ -17,30 +23,26 @@ public class ConjurMapProperty {
 	private static Properties props = new Properties();
 
 	private static ConjurMapProperty uniqueInstance = new ConjurMapProperty();
-	
-	
+
 	private String path = System.getProperty("CONJUR_PROPERTY_MAP");
-	
+
 	public static final String CONJUR_MAPPING = "conjur.mapping.";
 
+	@Autowired
+	private ConjurMapKey property= new ConjurMapKey();
+	
+	
+
 	private ConjurMapProperty() {
-		System.out.println("Property file>>>>"+path);
 
-		InputStream propsFile = ConjurMapProperty.class.getResourceAsStream(path);
-
-		if (propsFile != null) {
-			try {
-				props.load(propsFile);
-				System.out.println("External Property>>>"+props.toString());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-			try {
-				propsFile.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		try {
+			
+			File file = ResourceUtils.getFile(path);
+			InputStream in = new FileInputStream(file);
+			props.load(in);
+			
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
 		}
 
 	}
@@ -59,9 +61,8 @@ public class ConjurMapProperty {
 	 * @return - corresponding value of key defined at given property file.
 	 */
 	public String mapProperty(String name) {
-		//System.out.println("Received key>>>"+name);
 		String mapped = props.getProperty(CONJUR_MAPPING + name);
-		//System.out.println("Mapped key from property file"+mapped);
+	  //  System.out.println("keys>>>"+property.getKeys());
 		return mapped != null ? mapped : name;
 	}
 }
