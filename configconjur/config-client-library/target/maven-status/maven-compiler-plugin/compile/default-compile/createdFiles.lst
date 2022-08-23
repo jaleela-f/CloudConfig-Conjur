@@ -1,2 +1,3 @@
+com/cyberark/conjur/configclient/domain/ConjurMapKey.class
 com/cyberark/conjur/configclient/domain/ConjurConfigParam.class
 com/cyberark/conjur/configclient/domain/ConjurAuthParam.class

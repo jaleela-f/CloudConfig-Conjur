@@ -3,24 +3,19 @@ package com.cyberark.conjur.clientapp.processor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.EnvironmentAware;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
-
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
-import org.springframework.core.env.MutablePropertySources;
+import org.springframework.core.env.PropertySource;
+
 import com.cyberark.conjur.clientapp.core.ConjurPropertySource;
-import com.cyberark.conjur.configclient.domain.ConjurConfigParam;
-
-
+import com.cyberark.conjur.clientapp.service.CustomPropertySourceChain;
+import com.cyberark.conjur.clientapp.service.DefaultPropertySourceChain;
+import com.cyberark.conjur.clientapp.service.PropertyProcessorChain;
 
 
 @Configuration
@@ -31,8 +26,8 @@ public class ValueProcess implements BeanPostProcessor,InitializingBean,Environm
 	private ConfigurableEnvironment environment;
 	@Autowired
 	private ConjurPropertySource propertySource;
-
 	
+	private PropertyProcessorChain processorChain;
 	
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
@@ -44,9 +39,14 @@ public class ValueProcess implements BeanPostProcessor,InitializingBean,Environm
 		// TODO Auto-generated method stub
 		System.out.println("AfterPropertiesSet");
 		
-		environment.getPropertySources().addLast(new ConjurPropertySource());
+		this.processorChain = new DefaultPropertySourceChain();
+		CustomPropertySourceChain customPS = new CustomPropertySourceChain();
+		processorChain.setNextChain(customPS);
 		
-		//System.out.println("Property Sources>>>"+environment.getPropertySources());
+		//environment.getPropertySources().addLast(new ConjurPropertySource());
+		environment.getPropertySources().addLast(processorChain);
+		
+		System.out.println("Property Sources>>>"+environment.getPropertySources());
 		
 
 	}

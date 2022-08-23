@@ -24,7 +24,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.cyberark.conjur.cloudconfigconjur</groupId>
-			<artifactId>ClientAppTest</artifactId>
+			<artifactId>ClientAppPlugin</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
