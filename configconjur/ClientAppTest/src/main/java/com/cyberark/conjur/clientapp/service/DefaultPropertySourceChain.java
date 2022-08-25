@@ -1,15 +1,10 @@
 package com.cyberark.conjur.clientapp.service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.core.env.EnumerablePropertySource;
-import org.springframework.core.env.PropertySource;
+
+import com.cyberark.conjur.clientapp.util.ServerConstant;
+
 
 public class DefaultPropertySourceChain extends PropertyProcessorChain {
 
@@ -17,8 +12,8 @@ public class DefaultPropertySourceChain extends PropertyProcessorChain {
 
 	private PropertyProcessorChain chain;
 
-	private Map<String, Object> newMap = new HashMap<String, Object>();
-	private List<String> valueList = new ArrayList<String>();
+	//private Map<String, Object> newMap = new HashMap<String, Object>();
+	//private List<String> valueList = new ArrayList<String>();
 
 	public DefaultPropertySourceChain() {
 
@@ -45,12 +40,17 @@ public class DefaultPropertySourceChain extends PropertyProcessorChain {
 		// TODO Auto-generated method stub
 
 		String value = null;
-		System.out.println("Value inside Default" + value);
-
 		
-			if (value == null) {
+
+		/*if((!(name.contains(ServerConstant.SPRING_PREFIX)))&&(!(name.contains(ServerConstant.SERVER_PREFIX)))&& 
+				(!(name.contains(ServerConstant.ERROR_PREFIX))) && (!(name.contains(ServerConstant.HEALTH_PREFIX))) && 
+				(!(name.contains(ServerConstant.ECRYPT_PREFIX))) && (!(name.contains(ServerConstant.SPRING_UTIL_PREFIX))))
+		{*/
+			
+			if (value == null ) {
 				value = (String) this.chain.getProperty(name);
 			}
+		//}
 		
 
 		return value;

@@ -15,13 +15,13 @@ public class DemoApplication implements CommandLineRunner{
 	private Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 	
 
-	@Value("${dbUserName}")
+	@Value("${jenkins-app.dbUserName}")
 	private String userName;
 
-	@Value("${dbPassword}")
+	@Value("${jenkins-app.dbPassword}")
 	private String password;
 
-	@Value("${dbUrl}")
+	@Value("${jenkins-app.dbUrl}")
 	private String url;
 
 	

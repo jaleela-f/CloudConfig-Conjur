@@ -45,7 +45,7 @@ public class ConjurConfigParam {
 	}
 	
 	@Bean
-	public ConjurAuthParam conjurAuthParam()
+	public ConjurAuthParam  conjurAuthParam()
 	
 	{
 		
