@@ -45,15 +45,16 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.cyberark.conjur.cloudconfig"/>
 			<item value="com.conjur.configclient"/>
 			<item value="com.cyberark.conjur"/>
 			<item value="com.cyberark.conjur.configconjur"/>
-			<item value="com.cyberark.conjur.cloudconfig"/>
 			<item value="com.cyberark.conjur.cloudconfigconjur"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ClientPlugin"/>
 			<item value="Client"/>
 			<item value="SpringValue"/>
 			<item value="Demo"/>

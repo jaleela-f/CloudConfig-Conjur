@@ -10,8 +10,6 @@ import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
-import org.springframework.core.env.PropertySource;
-
 import com.cyberark.conjur.clientapp.core.ConjurPropertySource;
 import com.cyberark.conjur.clientapp.service.CustomPropertySourceChain;
 import com.cyberark.conjur.clientapp.service.DefaultPropertySourceChain;

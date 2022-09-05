@@ -11,6 +11,7 @@ import org.springframework.util.ResourceUtils;
 
 import com.cyberark.conjur.configclient.domain.ConjurMapKey;
 
+
 /**
  * 
  * This class loads the external configured conjur.properties file and resolves
@@ -27,13 +28,12 @@ public class ConjurMapProperty {
 	private String path = System.getProperty("CONJUR_PROPERTY_MAP");
 
 	public static final String CONJUR_MAPPING = "conjur.mapping.";
-
+	
 	@Autowired
 	private ConjurMapKey property= new ConjurMapKey();
-	
-	
 
 	private ConjurMapProperty() {
+		System.out.println("Inside ConjurMapProperty"+path);
 
 		try {
 			
@@ -44,7 +44,8 @@ public class ConjurMapProperty {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-
+		
+		
 	}
 
 	/**
@@ -61,8 +62,11 @@ public class ConjurMapProperty {
 	 * @return - corresponding value of key defined at given property file.
 	 */
 	public String mapProperty(String name) {
+		//System.out.println("InsidemapProperty");
 		String mapped = props.getProperty(CONJUR_MAPPING + name);
-	  //  System.out.println("keys>>>"+property.getKeys());
+	   //System.out.println("keys>>>"+mapped);
 		return mapped != null ? mapped : name;
 	}
+
+	
 }

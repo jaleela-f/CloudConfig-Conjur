@@ -2,6 +2,8 @@ package com.cyberark.conjur.clientapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.cyberark.conjur.clientapp.env.ConjurMapProperty;
 import com.cyberark.conjur.configclient.domain.ConjurConfigParam;
 
 @Configuration
@@ -12,6 +14,8 @@ public class ConjurConfig {
 	{
 		return new ConjurConfigParam();
 	}
+	
+	
 	
 	
 }

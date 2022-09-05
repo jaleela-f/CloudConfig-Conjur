@@ -1,6 +1,6 @@
 package com.cyberark.conjur.clientapp.processor;
 
-import java.lang.reflect.Field;
+/*import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -40,7 +40,7 @@ import com.cyberark.conjur.clientapp.service.DefaultPropertySourceChain;
 import com.cyberark.conjur.clientapp.service.PropertyProcessorChain;
 import com.cyberark.conjur.clientapp.util.ConjurPropertyLoaderUtil;
 
-@Configuration
+//@Configuration
 public class ConjurValueProcessor{// implements InitializingBean, BeanPostProcessor,
 		/*ApplicationContextAware, EnvironmentAware {
 
@@ -82,7 +82,7 @@ public class ConjurValueProcessor{// implements InitializingBean, BeanPostProces
 		// TODO Auto-generated method stub
 		this.applicationContext = applicationContext;
 
-	}*/
+	}
 
 	/*
 	 * @Override public void afterPropertiesSet() throws Exception { // TODO
@@ -172,4 +172,4 @@ public class ConjurValueProcessor{// implements InitializingBean, BeanPostProces
 
 	}*/
 
-}
+//}

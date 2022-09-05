@@ -1,10 +1,13 @@
 package com.cyberark.conjur.configclient.domain;
 
-import java.util.Iterator;
+
 import java.util.Properties;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+
 
 @Configuration
 //@ConfigurationProperties("conjur.mapping")
@@ -26,7 +29,6 @@ public class ConjurMapKey {
 		
 		return properties;
 	}
-	
 	
 			
 

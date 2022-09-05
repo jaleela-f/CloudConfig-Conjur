@@ -2,7 +2,6 @@ package com.cyberark.conjur;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-//@SpringBootApplication
-//@RestController
-//public class ClientApplication{// implements CommandLineRunner{
+/*@SpringBootApplication
+@RestController
+public class ClientApplication implements CommandLineRunner{
 
-	/*private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
+	private Logger logger = LoggerFactory.getLogger(ClientApplication.class);
 
-	@Value("${jenkins-app.dbUserName}")
+	@Value("${dbUserName}")
 	private String userName;
 
-	@Value("${jenkins-app.dbPassword}")
+	@Value("${dbPassword}")
 	private String password;
 
-	@Value("${jenkins-app.dbUrl}")
+	@Value("${dbUrl}")
 	private String url;
 
 	
@@ -51,7 +50,7 @@ import org.springframework.web.bind.annotation.RestController;
 		logger.info("Property >>>>>>>" + password);
 		logger.info("Property >>>>>>>>" + url);
 		
-	}*/
+	}
 	
 
-//}
+}*/
