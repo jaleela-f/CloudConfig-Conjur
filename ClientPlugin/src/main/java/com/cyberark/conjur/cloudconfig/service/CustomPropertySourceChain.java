@@ -42,6 +42,7 @@ public class CustomPropertySourceChain extends PropertyProcessorChain {
 				var = conjur.variables();
 				key = ConjurMapProperty.getInstance().mapProperty(key);
 				value = var.retrieveSecret(key.replace(".", "/"));
+				System.out.println("Value from Custom Property"+value);
 			}
 
 		} catch (Exception e) {

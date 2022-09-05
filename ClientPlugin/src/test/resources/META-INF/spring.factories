@@ -1,0 +1,2 @@
+org.springframework.cloud.bootstrap.EnableAutoConfiguration=/
+com.cyberark.conjur.clientapp.processor.ValueProcess
